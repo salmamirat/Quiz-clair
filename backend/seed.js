@@ -1,19 +1,16 @@
 const sequelize = require("./config/database");
+const Category = require("./models/Category");
 const Question = require("./models/Question");
-const questions = require("./data/questions");
+const categories = require("./data/categoriesData");
+const questions = require("./data/questionsData");
 
 const seedDatabase = async () => {
   try {
     await sequelize.sync({ force: true });
-
+    await Category.bulkCreate(categories);
     await Question.bulkCreate(questions);
-
-    console.log("Questions ajoutées avec succès !");
-
-    process.exit();
+    process.exit(0);
   } catch (error) {
-    console.error(error);
-
     process.exit(1);
   }
 };

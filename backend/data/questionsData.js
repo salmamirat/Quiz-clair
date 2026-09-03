@@ -1,111 +1,94 @@
 const questions = [
   {
-    id: 1,
     category: "culture",
-    question: "Quelle est la capitale du Maroc ?",
-    options: ["Casablanca", "Rabat", "Fès", "Marrakech"],
-    correctAnswer: "Rabat",
+    question: "Quelle est la capitale de l'Australie ?",
+    options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    correctAnswer: "Canberra"
   },
   {
-    id: 2,
     category: "culture",
-    question: "Quelle est la capitale de la France ?",
-    options: ["Paris", "Lyon", "Marseille", "Nice"],
-    correctAnswer: "Paris",
+    question: "Quelle est la planète la plus proche du Soleil ?",
+    options: ["Vénus", "Mercure", "Mars", "Jupiter"],
+    correctAnswer: "Mercure"
   },
   {
-    id: 3,
     category: "culture",
-    question: "Combien y a-t-il de continents ?",
-    options: ["5", "6", "7", "8"],
-    correctAnswer: "7",
+    question: "Qui a peint la Joconde ?",
+    options: ["Léonard de Vinci", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+    correctAnswer: "Léonard de Vinci"
   },
   {
-    id: 4,
     category: "culture",
-    question: "Quelle est la plus grande planète ?",
-    options: ["Mars", "Jupiter", "Terre", "Vénus"],
-    correctAnswer: "Jupiter",
+    question: "Quel est le plus grand océan du monde ?",
+    options: ["Océan Atlantique", "Océan Indien", "Océan Arctique", "Océan Pacifique"],
+    correctAnswer: "Océan Pacifique"
   },
   {
-    id: 5,
     category: "culture",
-    question: "Quelle langue parle-t-on au Brésil ?",
-    options: ["Espagnol", "Français", "Portugais", "Anglais"],
-    correctAnswer: "Portugais",
+    question: "En quelle année l'homme a-t-il marché sur la Lune ?",
+    options: ["1965", "1969", "1972", "1959"],
+    correctAnswer: "1969"
   },
-
   {
-    id: 6,
     category: "logique",
-    question: "Combien font 5 + 5 ?",
-    options: ["8", "9", "10", "11"],
-    correctAnswer: "10",
+    question: "Si 3 chats attrapent 3 souris en 3 minutes, combien de temps faut-il à 100 chats pour attraper 100 souris ?",
+    options: ["100 minutes", "3 minutes", "30 minutes", "1 minute"],
+    correctAnswer: "3 minutes"
   },
   {
-    id: 7,
     category: "logique",
-    question: "Combien font 10 × 2 ?",
-    options: ["10", "20", "30", "40"],
-    correctAnswer: "20",
+    question: "Complétez la suite : 2, 4, 8, 16, ... ?",
+    options: ["24", "30", "32", "64"],
+    correctAnswer: "32"
   },
   {
-    id: 8,
     category: "logique",
-    question: "Quel nombre vient après 99 ?",
-    options: ["98", "100", "101", "90"],
-    correctAnswer: "100",
+    question: "Quel mot continue la série : Janvier, Février, Mars, Avril, ... ?",
+    options: ["Juin", "Mai", "Juillet", "Août"],
+    correctAnswer: "Mai"
   },
   {
-    id: 9,
     category: "logique",
-    question: "Combien de côtés possède un triangle ?",
-    options: ["2", "3", "4", "5"],
-    correctAnswer: "3",
+    question: "Combien de mois dans l'année ont 28 jours ?",
+    options: ["1 seul", "2", "6", "Tous les 12"],
+    correctAnswer: "Tous les 12"
   },
   {
-    id: 10,
     category: "logique",
-    question: "Combien font 7 + 8 ?",
-    options: ["14", "15", "16", "17"],
-    correctAnswer: "15",
-  },
-
-  {
-    id: 11,
-    category: "divertissement",
-    question: "Quel personnage vit dans un ananas sous la mer ?",
-    options: ["Mickey", "Bob l'éponge", "Batman", "Superman"],
-    correctAnswer: "Bob l'éponge",
+    question: "Un père et son fils ont 36 ans à eux deux. Le père a 30 ans de plus que le fils. Quel âge a le fils ?",
+    options: ["6 ans", "3 ans", "5 ans", "2 ans"],
+    correctAnswer: "3 ans"
   },
   {
-    id: 12,
     category: "divertissement",
-    question: "Quel héros porte un costume de chauve-souris ?",
-    options: ["Batman", "Superman", "Spiderman", "Iron Man"],
-    correctAnswer: "Batman",
+    question: "Quel est le nom du sorcier ennemi juré de Harry Potter ?",
+    options: ["Voldemort", "Grindelwald", "Snape", "Malefoy"],
+    correctAnswer: "Voldemort"
   },
   {
-    id: 13,
     category: "divertissement",
-    question: "Quel personnage porte une casquette rouge ?",
-    options: ["Sonic", "Mario", "Pikachu", "Link"],
-    correctAnswer: "Mario",
+    question: "Quel jeu vidéo culte met en scène Mario et Luigi ?",
+    options: ["Sonic", "Super Mario", "Zelda", "Donkey Kong"],
+    correctAnswer: "Super Mario"
   },
   {
-    id: 14,
     category: "divertissement",
-    question: "Quelle princesse Disney a de longs cheveux ?",
-    options: ["Elsa", "Raiponce", "Ariel", "Belle"],
-    correctAnswer: "Raiponce",
+    question: "Dans le Roi Lion, comment s'appelle le singe sage et chaman ?",
+    options: ["Timon", "Pumbaa", "Rafiki", "Zazu"],
+    correctAnswer: "Rafiki"
   },
   {
-    id: 15,
     category: "divertissement",
-    question: "Dans quelle saga trouve-t-on Harry Potter ?",
-    options: ["Star Wars", "Harry Potter", "Avatar", "Titanic"],
-    correctAnswer: "Harry Potter",
+    question: "Combien y a-t-il de joueurs sur le terrain dans une équipe de football classique ?",
+    options: ["9", "10", "11", "12"],
+    correctAnswer: "11"
   },
+  {
+    category: "divertissement",
+    question: "Quelle maison a pour emblème un loup géant dans Game of Thrones ?",
+    options: ["Lannister", "Targaryen", "Stark", "Baratheon"],
+    correctAnswer: "Stark"
+  }
 ];
 
 module.exports = questions;

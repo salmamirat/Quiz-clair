@@ -6,17 +6,14 @@ const Question = sequelize.define("Question", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-
   question: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-
   options: {
     type: DataTypes.JSON,
     allowNull: false,
   },
-
   correctAnswer: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -24,7 +21,3 @@ const Question = sequelize.define("Question", {
 });
 
 module.exports = Question;
-
-
-
-
