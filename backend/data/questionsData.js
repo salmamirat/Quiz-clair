@@ -1,0 +1,111 @@
+const questions = [
+  {
+    id: 1,
+    category: "culture",
+    question: "Quelle est la capitale du Maroc ?",
+    options: ["Casablanca", "Rabat", "Fès", "Marrakech"],
+    correctAnswer: "Rabat",
+  },
+  {
+    id: 2,
+    category: "culture",
+    question: "Quelle est la capitale de la France ?",
+    options: ["Paris", "Lyon", "Marseille", "Nice"],
+    correctAnswer: "Paris",
+  },
+  {
+    id: 3,
+    category: "culture",
+    question: "Combien y a-t-il de continents ?",
+    options: ["5", "6", "7", "8"],
+    correctAnswer: "7",
+  },
+  {
+    id: 4,
+    category: "culture",
+    question: "Quelle est la plus grande planète ?",
+    options: ["Mars", "Jupiter", "Terre", "Vénus"],
+    correctAnswer: "Jupiter",
+  },
+  {
+    id: 5,
+    category: "culture",
+    question: "Quelle langue parle-t-on au Brésil ?",
+    options: ["Espagnol", "Français", "Portugais", "Anglais"],
+    correctAnswer: "Portugais",
+  },
+
+  {
+    id: 6,
+    category: "logique",
+    question: "Combien font 5 + 5 ?",
+    options: ["8", "9", "10", "11"],
+    correctAnswer: "10",
+  },
+  {
+    id: 7,
+    category: "logique",
+    question: "Combien font 10 × 2 ?",
+    options: ["10", "20", "30", "40"],
+    correctAnswer: "20",
+  },
+  {
+    id: 8,
+    category: "logique",
+    question: "Quel nombre vient après 99 ?",
+    options: ["98", "100", "101", "90"],
+    correctAnswer: "100",
+  },
+  {
+    id: 9,
+    category: "logique",
+    question: "Combien de côtés possède un triangle ?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: "3",
+  },
+  {
+    id: 10,
+    category: "logique",
+    question: "Combien font 7 + 8 ?",
+    options: ["14", "15", "16", "17"],
+    correctAnswer: "15",
+  },
+
+  {
+    id: 11,
+    category: "divertissement",
+    question: "Quel personnage vit dans un ananas sous la mer ?",
+    options: ["Mickey", "Bob l'éponge", "Batman", "Superman"],
+    correctAnswer: "Bob l'éponge",
+  },
+  {
+    id: 12,
+    category: "divertissement",
+    question: "Quel héros porte un costume de chauve-souris ?",
+    options: ["Batman", "Superman", "Spiderman", "Iron Man"],
+    correctAnswer: "Batman",
+  },
+  {
+    id: 13,
+    category: "divertissement",
+    question: "Quel personnage porte une casquette rouge ?",
+    options: ["Sonic", "Mario", "Pikachu", "Link"],
+    correctAnswer: "Mario",
+  },
+  {
+    id: 14,
+    category: "divertissement",
+    question: "Quelle princesse Disney a de longs cheveux ?",
+    options: ["Elsa", "Raiponce", "Ariel", "Belle"],
+    correctAnswer: "Raiponce",
+  },
+  {
+    id: 15,
+    category: "divertissement",
+    question: "Dans quelle saga trouve-t-on Harry Potter ?",
+    options: ["Star Wars", "Harry Potter", "Avatar", "Titanic"],
+    correctAnswer: "Harry Potter",
+  },
+];
+
+module.exports = questions;

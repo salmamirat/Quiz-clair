@@ -1,9 +1,30 @@
-const questions = require("../data/questions.json");
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config/database");
 
-const getQuestionsByCategory = (category) => {
-  return questions.filter(
-    (question) => question.category === category
-  );
-};
+const Question = sequelize.define("Question", {
+  category: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 
-module.exports = {getQuestionsByCategory,};
+  question: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+
+  options: {
+    type: DataTypes.JSON,
+    allowNull: false,
+  },
+
+  correctAnswer: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+});
+
+module.exports = Question;
+
+
+
+

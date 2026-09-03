@@ -1,22 +1,16 @@
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Node modules
 node_modules/
+.env
 
-# Expo
 .expo/
 dist/
 web-build/
 
-# Logs
+
 *.log
 
-# VS Code
+
 .vscode/
 
-# OS
+
 .DS_Store
 Thumbs.db

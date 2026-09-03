@@ -1,13 +1,28 @@
-const questionModel = require("../models/questionModel");
-
 const getQuestions = (req, res) => {
-  const { category } = req.params;
+  res.json({
+    message: "Liste des questions",
+  });
+};
 
-  const questions = questionModel.getQuestionsByCategory(category);
+const getQuestionById = (req, res) => {
+  const id = req.params.id;
 
-  res.json(questions);
+  res.json({
+    message: `Question numéro ${id}`,
+  });
+};
+
+const createQuestion = (req, res) => {
+  const question = req.body;
+
+  res.status(201).json({
+    message: "Question créée",
+    data: question,
+  });
 };
 
 module.exports = {
   getQuestions,
+  getQuestionById,
+  createQuestion,
 };
