@@ -10,9 +10,6 @@ export default function CategorySelector({ categories = [], onSelectCategory, lo
         <View style={styles.topBadgeLeft}>
           <Ionicons name="flash" size={18} color="#FFFFFF" />
         </View>
-        <View style={styles.topBadgeRight}>
-          <Ionicons name="settings-outline" size={18} color="#D97706" />
-        </View>
       </View>
 
       <View style={styles.header}>
