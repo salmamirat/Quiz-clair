@@ -66,18 +66,7 @@ export default function CategorySelector({ categories = [], onSelectCategory, lo
         </View>
       )}
 
-      <View style={styles.bottomWaveContainer} pointerEvents="none">
-        <Svg width="100%" height={120} viewBox="0 0 375 120" preserveAspectRatio="none">
-          <Path
-            d="M0,70 C90,30 160,95 240,55 C290,30 340,50 375,35 L375,120 L0,120 Z"
-            fill="#2BA169"
-          />
-          <Path
-            d="M0,50 C60,20 120,70 180,95 C140,110 50,115 0,105 Z"
-            fill="#1E293B"
-          />
-        </Svg>
-      </View>
+
     </View>
   );
 }
@@ -88,7 +77,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FBF9F5",
     paddingHorizontal: 24,
     paddingTop: 16,
-    justifyContent: "space-between"
+    justifyContent: "flex-start"
   },
   headerBar: {
     flexDirection: "row",
@@ -195,11 +184,5 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     justifyContent: "center",
     alignItems: "center"
-  },
-  bottomWaveContainer: {
-    width: "100%",
-    position: "relative",
-    bottom: -10,
-    marginTop: "auto"
   }
 });

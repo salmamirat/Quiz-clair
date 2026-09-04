@@ -12,7 +12,7 @@ const getQuestionsByCategory = async (req, res) => {
   }
 };
 
-const getAllQuestions = async (req, res) => {
+const getAllQuestions = async (_req, res) => {
   try {
     const questions = await Question.findAll();
     res.json(questions);

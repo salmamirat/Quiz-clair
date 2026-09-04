@@ -31,10 +31,10 @@ export default function ResultCard({ score, total, onRestart, onSelectCategory }
           <Text style={styles.trophyEmoji}>🏆</Text>
         </View>
         <View style={styles.starsDecor}>
-          <Text style={[styles.star, { top: 10, left: 40 }]}>✨</Text>
-          <Text style={[styles.star, { top: 20, right: 50 }]}>⭐</Text>
-          <Text style={[styles.star, { top: 60, left: 20 }]}>🎉</Text>
-          <Text style={[styles.star, { top: 70, right: 30 }]}>✨</Text>
+          <View style={[styles.confetti, { top: 20, left: 40, backgroundColor: "#2BA169", transform: [{ rotate: "45deg" }] }]} />
+          <View style={[styles.confetti, { top: 30, right: 50, backgroundColor: "#3B82F6", transform: [{ rotate: "-25deg" }] }]} />
+          <View style={[styles.confetti, { top: 80, left: 20, backgroundColor: "#8B5CF6", transform: [{ rotate: "15deg" }] }]} />
+          <View style={[styles.confetti, { top: 70, right: 30, backgroundColor: "#F59E0B", transform: [{ rotate: "-40deg" }] }]} />
         </View>
       </View>
 
@@ -124,9 +124,11 @@ const styles = StyleSheet.create({
   starsDecor: {
     ...StyleSheet.absoluteFillObject
   },
-  star: {
+  confetti: {
     position: "absolute",
-    fontSize: 20
+    width: 8,
+    height: 16,
+    borderRadius: 3
   },
   card: {
     flex: 1,

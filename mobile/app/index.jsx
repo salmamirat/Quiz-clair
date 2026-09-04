@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  ActivityIndicator,
-  TouchableOpacity
-} from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator, TouchableOpacity} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import Svg, { Path } from "react-native-svg";
@@ -197,15 +191,6 @@ export default function App() {
 
           <AnswerFeedback isCorrect={isCorrect} visible={feedbackVisible} />
         </View>
-
-        <View style={styles.bottomWaveContainer} pointerEvents="none">
-          <Svg width="100%" height={90} viewBox="0 0 375 90" preserveAspectRatio="none">
-            <Path
-              d="M0,50 C100,10 200,80 375,30 L375,90 L0,90 Z"
-              fill="#2BA169"
-            />
-          </Svg>
-        </View>
       </SafeAreaView>
     );
   }
@@ -229,7 +214,7 @@ const styles = StyleSheet.create({
   quizContainer: {
     flex: 1,
     backgroundColor: "#FBF9F5",
-    justifyContent: "space-between"
+    justifyContent: "flex-start"
   },
   resultSafeContainer: {
     flex: 1,
@@ -294,10 +279,5 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingTop: 8,
     zIndex: 2
-  },
-  bottomWaveContainer: {
-    width: "100%",
-    position: "relative",
-    bottom: 0
   }
 });
