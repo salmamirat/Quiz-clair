@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { View, Text, StyleSheet, ActivityIndicator, TouchableOpacity} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import Svg, { Path } from "react-native-svg";
 import CategorySelector from "../src/components/CategorySelector";
 import QuestionCard from "../src/components/QuestionCard";
 import ProgressBar from "../src/components/ProgressBar";
