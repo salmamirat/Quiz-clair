@@ -4,9 +4,9 @@ services:
     container_name: quiz_postgres
     restart: always
     environment:
-      POSTGRES_USER: quiz_user
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: quiz_eclair
+      POSTGRES_USER: ${DB_USER:-quiz_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-ur_psswrd}
+      POSTGRES_DB: ${DB_NAME:-quiz_eclair}
     ports:
       - "5432:5432"
     volumes:

@@ -1,8 +1,5 @@
 const express = require("express");
-const {
-  getQuestionsByCategory,
-  getAllQuestions,
-} = require("../controllers/questionController");
+const { getQuestionsByCategory,  getAllQuestions,} = require("../controllers/questionController");
 
 const router = express.Router();
 
